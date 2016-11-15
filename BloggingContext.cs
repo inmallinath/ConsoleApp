@@ -9,7 +9,7 @@ namespace ConsoleApplication
 
        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
        {
-           var connection = @"Server=.\\sqlexpress;Database=ConsoleApp;Trusted_Connection=True";
+           var connection = @"Server=.\sqlexpress;Database=ConsoleApp;Trusted_Connection=True";
            optionsBuilder.UseSqlServer(connection);
        }
     }
